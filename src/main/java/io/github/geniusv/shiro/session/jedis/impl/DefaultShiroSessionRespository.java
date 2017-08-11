@@ -24,9 +24,7 @@ import org.apache.shiro.session.Session;
 import java.io.Serializable;
 import java.util.Collection;
 
-/**
- * Created by GeniusV on 8/8/17.
- */
+
 public class DefaultShiroSessionRespository implements ShiroSessionRespository {
 
     private JedisDao jedisDao;

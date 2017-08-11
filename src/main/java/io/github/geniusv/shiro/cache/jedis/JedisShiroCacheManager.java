@@ -23,11 +23,6 @@ import org.apache.shiro.cache.CacheManager;
 import javax.security.auth.DestroyFailedException;
 import javax.security.auth.Destroyable;
 
-/**
- * Copyright 2017 GeniusV
- * All rights reserved.
- * Created by GeniusV on 8/9/17.
- */
 public class JedisShiroCacheManager implements CacheManager, Destroyable {
 
     private JedisDao jedisDao;
