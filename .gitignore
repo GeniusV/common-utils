@@ -1,2 +1,5 @@
 **/target/
 .idea/
+*.iml
+*.DS_Store
+dump.rdb
