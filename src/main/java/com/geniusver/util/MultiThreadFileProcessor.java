@@ -6,8 +6,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by GeniusV on 6/20/20.
+ *
+ * Simple demo of multithreading process large file with time-consuming logic.
  */
-public class MultiThreadFileProcesser implements Runnable {
+public class MultiThreadFileProcessor implements Runnable {
     private ExecutorService externalThreadPool;
     private BlockingQueue<String> blockingQueue;
     private String fileEncoding = "UTF-8";
@@ -20,7 +22,7 @@ public class MultiThreadFileProcesser implements Runnable {
     private File file;
     private FileTextHandler fileTextHandler;
 
-    public MultiThreadFileProcesser(File file, FileTextHandler fileTextHandler) {
+    public MultiThreadFileProcessor(File file, FileTextHandler fileTextHandler) {
         this.file = file;
         this.fileTextHandler = fileTextHandler;
     }

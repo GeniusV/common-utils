@@ -16,7 +16,7 @@ class MultiThreadFileProcessorTest {
 
     @Test
     public void test() {
-        MultiThreadFileProcesser processor = new MultiThreadFileProcesser(new File(FILE_PATH), new TestFileHandler());
+        MultiThreadFileProcessor processor = new MultiThreadFileProcessor(new File(FILE_PATH), new TestFileHandler());
         processor.run();
     }
 
