@@ -5,8 +5,6 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * Created by GeniusV on 6/20/20.
- *
  * Simple demo of multithreading process large file with time-consuming logic.
  */
 public class MultiThreadFileProcessor implements Runnable {

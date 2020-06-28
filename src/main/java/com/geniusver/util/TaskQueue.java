@@ -4,7 +4,12 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * Created by GeniusV on 6/21/20.
+ * This queue is modified from tomcat's TaskQueue, which is used to change default ThreadPoolExecutor logic.
+ *
+ * With TaskQueue,
+ * If current thread count < maximumPoolSize, ThreadPoolExecutor will use existed or create new thread to execute task until
+ * thread number equals maximumPoolSize.
+ * If current thread count >= maximumPoolSize, ThreadPoolExecutor will put task into queue.
  */
 public class TaskQueue extends LinkedBlockingQueue<Runnable> {
 
