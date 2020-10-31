@@ -18,6 +18,11 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
 }
 
+test {
+    useJUnitPlatform()
+}
+
+
 group = 'io.github.geniusv'
 version = '1.0'
 sourceCompatibility = '1.8'
